@@ -30,19 +30,20 @@ def check_password_strength(password):
         tips.append("Include at least one special character (@$!%*?&).")
 
     if strength == 5:
-        return "Strong Password 💪", tips
+        return "Strong Password 💪", "green", tips
     elif strength >= 3:
-        return "Moderate Password ⚠️", tips
+        return "Moderate Password ⚠️", "orange", tips
     else:
-        return "Weak Password 🚨", tips
+        return "Weak Password 🚨", "red", tips
 
-# Get user input
-password = input("Enter your password: ")
-result, suggestions = check_password_strength(password)
-
-print(f"Password Strength: {result}")
-
-if suggestions:
-    print("Tips to improve your password:")
-    for tip in suggestions:
-        print(f"- {tip}")
+if __name__ == "__main__":
+    while True:
+        password = input("Enter your password (or type 'exit' to quit): ")
+        if password.lower() == 'exit':
+            break
+        result, color, suggestions = check_password_strength(password)
+        print(f"Password Strength: {result}")
+        if suggestions:
+            print("Suggestions:")
+            for tip in suggestions:
+                print(f"- {tip}")
