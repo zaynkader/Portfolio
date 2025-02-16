@@ -1,4 +1,4 @@
-# Security Audit Report Template
+# Security Audit Report - Skapad av Zayn
 
 ## **1. Scope & Objectives**
 ### **Scope:**
@@ -22,9 +22,9 @@ The IT department manages the following critical assets:
 ### **Identified Risks & Security Concerns**
 The organization has several high-risk vulnerabilities that require immediate attention:
 - ❌ **Lack of encryption** for stored customer payment data.
-- ❌ **No Intrusion Detection System (IDS)** to monitor network threats.
-- ❌ **Unrestricted access** to sensitive data for all employees.
-- ❌ **No disaster recovery plan** or routine backups.
+- **No Intrusion Detection System (IDS)** to monitor network threats.
+- **Unrestricted access** to sensitive data for all employees.
+- **No disaster recovery plan** or routine backups.
 
 **Overall Risk Score:** **8/10** (High) – Due to missing controls and compliance shortcomings.
 
@@ -35,7 +35,7 @@ The organization has several high-risk vulnerabilities that require immediate at
 - [x] **Firewall configured** with defined security rules.
 - [x] **Antivirus software installed** and monitored regularly.
 
-### ❌ **Missing & Required Security Controls**
+### **Missing & Required Security Controls**
 - [ ] **Encryption for customer data** – Protect credit card information in storage.
 - [ ] **Centralized password management** – Implement a secure credential storage solution.
 - [ ] **Access controls with least privilege** – Restrict access based on job roles.
@@ -69,14 +69,14 @@ The organization must comply with the following industry regulations:
 - [ ] Password policies enforce complexity requirements.
 
 ### **Technical Controls**
-- [ ] Firewalls are properly configured and active.
+- [ x ] Firewalls are properly configured and active.
 - [ ] IDS/IPS solutions are deployed and monitoring traffic.
 - [ ] Data encryption is enforced for sensitive information.
 
 ### **Physical Controls**
-- [ ] Surveillance cameras cover all critical areas.
+- [ x ] Surveillance cameras cover all critical areas.
 - [ ] Access control measures (badges, locks) are in place.
-- [ ] Backup power and fire suppression systems are functional.
+- [ x ] Backup power and fire suppression systems are functional.
 
 ---
 
