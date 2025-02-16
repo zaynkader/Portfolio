@@ -69,14 +69,14 @@ The organization must comply with the following industry regulations:
 - [ ] Password policies enforce complexity requirements.
 
 ### **Technical Controls**
-- [ x ] Firewalls are properly configured and active.
+- [x] Firewalls are properly configured and active.
 - [ ] IDS/IPS solutions are deployed and monitoring traffic.
 - [ ] Data encryption is enforced for sensitive information.
 
 ### **Physical Controls**
-- [ x ] Surveillance cameras cover all critical areas.
+- [x] Surveillance cameras cover all critical areas.
 - [ ] Access control measures (badges, locks) are in place.
-- [ x ] Backup power and fire suppression systems are functional.
+- [x] Backup power and fire suppression systems are functional.
 
 ---
 
