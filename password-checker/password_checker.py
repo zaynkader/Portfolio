@@ -1,3 +1,4 @@
+import streamlit as st
 import re
 
 def check_password_strength(password):
@@ -36,14 +37,23 @@ def check_password_strength(password):
     else:
         return "Weak Password 🚨", "red", tips
 
+# Streamlit UI
+def main():
+    st.title("🔒 Password Strength Checker")
+    st.write("Enter a password to check its strength and get improvement tips.")
+    
+    password = st.text_input("Enter your password", type="password")
+    if st.button("Check Password"):
+        if password:
+            result, color, suggestions = check_password_strength(password)
+            st.markdown(f"**Password Strength:** <span style='color:{color}; font-weight:bold;'>{result}</span>", unsafe_allow_html=True)
+            
+            if suggestions:
+                st.write("### Suggestions to Improve Your Password:")
+                for tip in suggestions:
+                    st.write(f"- {tip}")
+        else:
+            st.warning("Please enter a password to check.")
+
 if __name__ == "__main__":
-    while True:
-        password = input("Enter your password (or type 'exit' to quit): ")
-        if password.lower() == 'exit':
-            break
-        result, color, suggestions = check_password_strength(password)
-        print(f"Password Strength: {result}")
-        if suggestions:
-            print("Suggestions:")
-            for tip in suggestions:
-                print(f"- {tip}")
+    main()
