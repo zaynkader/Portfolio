@@ -1,4 +1,4 @@
-# 🛡️ Botium Toys Security Audit Report  
+# Botium Toys Security Audit Report - Skapad av Zayn
 
 ## **1. Scope & Objectives**  
 ### **Scope:**  
@@ -26,7 +26,7 @@ The organization has several **high-risk vulnerabilities** that require immediat
 - ❌ **Unrestricted access** to sensitive data for all employees.  
 - ❌ **Absence of a disaster recovery plan** or routine backups.  
 
-📌 **Overall Risk Score:** **8/10** (High) – Due to missing controls and compliance shortcomings.  
+**Overall Risk Score:** **8/10** (High) – Due to missing controls and compliance shortcomings.  
 
 ---
 
@@ -65,4 +65,4 @@ Botium Toys must comply with the following industry regulations:
 ## **Conclusion**  
 This audit highlights critical vulnerabilities that must be addressed to safeguard Botium Toys' **business operations, customer data, and regulatory compliance**. By implementing the recommended security measures, the company can significantly enhance its **overall security posture** and reduce risk exposure.  
 
-📌 **Part of my cybersecurity training.**
+**Part of my cybersecurity training.**
